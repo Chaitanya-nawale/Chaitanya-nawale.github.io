@@ -1,35 +1,45 @@
 {
   "categories": [
     {
-      "title": "Mobile Development",
+      "title": "Programming Languages",
       "skills": [
-        { "name": "Flutter", "level": 3, "icon": "skill-icons:flutter-dark" },
-        { "name": "Dart", "level": 3, "icon": "skill-icons:dart-dark" },
-        { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" }
+        { "name": "Python", "level": 3, "icon": "skill-icons:python-dark" },
+        { "name": "Java", "level": 3, "icon": "skill-icons:java-dark" },
+        { "name": "C++", "level": 2, "icon": "skill-icons:cpp" },
+        { "name": "JavaScript", "level": 2, "icon": "skill-icons:javascript" }
+      ]
+    },
+    {
+      "title": "Backend and AI Frameworks",
+      "skills": [
+        { "name": "PyTorch", "level": 3, "icon": "skill-icons:pytorch-dark" },
+        { "name": "Spring", "level": 3, "icon": "skill-icons:spring-dark" },
+        { "name": "FastAPI", "level": 2, "icon": "skill-icons:fastapi" },
+        { "name": "LangChain", "level": 1, "icon": "simple-icons:langchain" }
+      ]
+    },
+    {
+      "title": "Tools and Infrastructure",
+      "skills": [
+        { "name": "Git", "level": 3, "icon": "skill-icons:git" },
+        { "name": "Docker", "level": 2, "icon": "skill-icons:docker" },
+        { "name": "n8n", "level": 2, "icon": "simple-icons:n8n" },
+        { "name": "vLLM", "level": 2, "icon": "simple-icons:vllm" }
       ]
     },
     {
       "title": "Frontend",
       "skills": [
-        { "name": "Astro", "level": 2, "icon": "skill-icons:astro" },
         { "name": "HTML", "level": 2, "icon": "skill-icons:html" },
         { "name": "CSS", "level": 2, "icon": "skill-icons:css" },
         { "name": "Tailwind CSS", "level": 1, "icon": "skill-icons:tailwindcss-dark" }
       ]
     },
     {
-      "title": "Backend",
+      "title": "Database Tools",
       "skills": [
-        { "name": "FastAPI", "level": 2, "icon": "skill-icons:fastapi" },
-        { "name": "Python", "level": 2, "icon": "skill-icons:python-dark" },
-        { "name": "Firebase", "level": 3, "icon": "vscode-icons:file-type-firebase" }
-      ]
-    },
-    {
-      "title": "Database",
-      "skills": [
-        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
-        { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" }
+        { "name": "MySQL", "level": 3, "icon": "skill-icons:mysql-dark" },
+        { "name": "Supabase", "level": 2, "icon": "skill-icons:supabase-dark" }
       ]
     }
   ]

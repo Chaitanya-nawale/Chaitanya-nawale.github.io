@@ -1,30 +1,30 @@
 {
-  "name": "John Doe",
-  "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
+  "name": "Chaitanya Nawale",
+  "photoUrl": "logo.png",
+  "intro": "<strong>M.Sc. Data Science</strong> candidate at RWTH Aachen | 3+ years of experience as a <strong>Software Engineer</strong><br/><div class='mt-4 text-neutral'>Combining strong software engineering foundations with Machine Learning and Agentic AI to build impactful, production ready intelligent systems.</div>",
   "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
+  "webpageTitle": "Chaitanya Nawale",
+  "resumeUrl": "https://drive.google.com/file/d/1Cbkv5ttDiRC9i65lhy3SrSg0wRiwbgrX/view?usp=sharing",
 
   "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
+      "url": "https://github.com/Chaitanya-nawale",
       "icon": "mdi:github",
       "showInContact": true
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "url": "https://linkedin.com/in/chaitanyanawale",
       "icon": "mdi:linkedin",
       "showInContact": true
     },
     {
       "name": "Leetcode",
-      "url": "#",
+      "url": "https://leetcode.com/u/Chaitanya_Nawale/",
       "icon": "devicon-plain:leetcode",
-      "showInContact": false
+      "showInContact": true
     },
     {
       "name": "Behance",
@@ -34,15 +34,15 @@
     },
     {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:chaitanya6.nawale@gmail.com",
       "icon": "mdi:email",
       "showInContact": true
     },
     {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "#",
       "icon": "mdi:whatsapp",
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Facebook",

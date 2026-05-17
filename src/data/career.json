@@ -1,26 +1,34 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
-    "period": "Oct 2025 - Present",
-    "type": "Full time job",
-    "description": "Leading cross-platform mobile development using Flutter and FastAPI. Focused on scalable system design and high-performance data processing.",
-    "skills": ["Leading", "Collaboration"]
-  },
-  {
-    "company": "Demo Company",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
-    "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
-  },
-  {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
+    "company": "RWTH Aachen University",
+    "role": "M. Sc. Data Science",
+    "period": "Oct 2024 - Present",
     "type": "Student",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["C++", "OOP", "Problem Solving"]
+    "description": "Specialized in Machine Learning, Deep Learning, and Agentic AI, with hands on experience in designing and deploying data driven solutions.",
+    "skills": ["Python", "FastAPI", "Pytorch","Deep Learning", "LLMs", "RAG"]
+  },
+  {
+    "company": "École Polytechnique Fédérale de Lausanne (EPFL)",
+    "role": "Erasmus Exchange in Computer Science",
+    "period": "September 2025 ‑ January 2026",
+    "type": "Student",
+    "description": "Built strong mathematical foundations in modern AI, with experience in designing, building, and iterating an AI product using user feedback.",
+    "skills": ["AI Product Management", "GenAI", "Agentic AI", "n8n", "Supabase"]
+  },
+  {
+    "company": "Interactive Brokers Software Services (India) Private Limited",
+    "role": "Software Engineer",
+    "period": "July 2021 - Sep 2024",
+    "type": "Full time job",
+    "description": "Developed and optimized scalable backend systems for financial applications, focusing on performance, reliability, and automation.",
+    "skills": ["Java", "Spring Boot", "REST APIs", "Oracle SQL", "Git", "Docker", "JavaScript", "HTML", "CSS", "Bash"]
+  },
+  {
+    "company": "University of Pune",
+    "role": "B.E. in Computer Engineering ",
+    "period": "August 2017 - May 2021",
+    "type": "Student",
+    "description": "Built a strong foundation in programming, data structures and algorithms, and modern software engineering principles.",
+    "skills": ["C", "C++", "DSA", "DBMS", "OOP", "Problem Solving"]
   }
 ]
