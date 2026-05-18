@@ -1,20 +1,29 @@
 [
   {
-    "title": "Awesome Website",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind"],
+    "title": "XpertsAI",
+    "description": "Built an AI platform enabling experts to share and monetize their niche knowledge at scale.",
+    "images": ["Web1.png", "Web2.png", "Web3.png", "Web4.png", "Web5.png", "Web6.png" ],
+    "tech": ["FastAPI", "n8n", "Supabase", "vLLM"],
     "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
+    "link": "https://github.com/Chaitanya-nawale/ExpertKnowledgeTwin/",
     "category": "Published Website"
   },
   {
-    "title": "Demo Mobile App",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-02.jpeg", "#"],
-    "tech": ["Flutter", "Dart", "REST API"],
-    "platforms": ["apple-ios", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
-    "category": "Hobby"
+    "title": "Chasing Birds",
+    "description": "Developed a multimodal diffusion system that generates bird audio from images or text.",
+    "images": ["DLL1.png"],
+    "tech": ["Pytorch", "Deep Learning", "Data Preprocessing"],
+    "platforms": [],
+    "link": "https://github.com/Chaitanya-nawale/BirdAudioGenerator/",
+    "category": "Deep Learning Lab"
+  },
+  {
+    "title": "SnitchAI",
+    "description": "Engineered an AI platform delivering financial insights and detecting anomalous transactions.",
+    "images": ["App1.png", "App2.png", "App3.png" ],
+    "tech": ["Oracle WayFlowCore", "Ollama", "Streamlit"],
+    "platforms": ["application"],
+    "link": "https://github.com/Chaitanya-nawale/LauzHack2025/",
+    "category": "Desktop Application"
   }
 ]
