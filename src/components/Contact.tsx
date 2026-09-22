@@ -1,35 +1,95 @@
+import { useEffect, useRef } from 'react';
 import { Mail, ArrowUpRight } from 'lucide-react';
+import { annotate } from 'rough-notation';
 import { personalInfo } from '../data/content';
 import { SectionHeading } from './ui/SectionHeading';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { Footer } from './Footer';
 
 export function Contact() {
   const revealRef = useScrollReveal();
+  const highlightRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (!highlightRef.current) return;
+
+    let annotation: ReturnType<typeof annotate> | undefined;
+    let timer: ReturnType<typeof setTimeout>;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && highlightRef.current) {
+          timer = setTimeout(() => {
+            if (!highlightRef.current) return;
+            annotation = annotate(highlightRef.current, {
+              type: 'highlight',
+              color: 'hsl(139 28% 84%)', // Soft sage green highlight matching site accent
+              animationDuration: 1000,
+              multiline: true,
+            });
+            annotation.show();
+          }, 600);
+
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(highlightRef.current);
+
+    const handleResize = () => {
+      if (annotation && highlightRef.current) {
+        annotation.remove();
+        annotation = annotate(highlightRef.current, {
+          type: 'highlight',
+          color: 'hsl(139 28% 84%)',
+          animationDuration: 0,
+          multiline: true,
+        });
+        annotation.show();
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(timer);
+      window.removeEventListener('resize', handleResize);
+      if (annotation) annotation.remove();
+    };
+  }, []);
 
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col justify-center py-20 md:py-28 px-6 scroll-mt-20 md:scroll-mt-24"
+      className="min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-4.5rem)] flex flex-col justify-between pt-16 sm:pt-20 md:pt-28 px-6 pb-3 sm:pb-4 scroll-mt-16 md:scroll-mt-18"
     >
       <div ref={revealRef} className="max-w-2xl mx-auto w-full">
         <div className="reveal">
-          <SectionHeading className="mb-8">
+          <SectionHeading className="mb-6 sm:mb-8">
             Contact
           </SectionHeading>
         </div>
 
         <div className="reveal">
           <h3 className="text-2xl sm:text-3xl font-semibold text-text tracking-tight leading-snug">
-            Let&apos;s build something{' '}
-            <span className="text-accent">great together.</span>
+            Let&apos;s ship something{' '}
+            <span
+              ref={highlightRef}
+              className="relative inline-block px-1.5 sm:px-2 text-text"
+            >
+              great together.
+            </span>
           </h3>
-          <p className="mt-3 text-text-secondary text-sm sm:text-base leading-relaxed max-w-lg">
+          <p className="mt-3.5 text-text-secondary text-sm sm:text-base leading-relaxed max-w-lg">
             Feel free to reach out if you want to create products that people genuinely love to use.
           </p>
         </div>
 
         {/* Contact Channels Grid */}
-        <div className="reveal mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+        <div className="reveal mt-9 sm:mt-11 grid grid-cols-1 sm:grid-cols-3 gap-4">
           {/* Email Card */}
           <a
             href={`mailto:${personalInfo.email}`}
@@ -96,6 +156,8 @@ export function Contact() {
           </a>
         </div>
       </div>
+
+      <Footer />
     </section>
   );
 }

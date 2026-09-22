@@ -41,7 +41,15 @@ export function Navbar() {
 
   const handleNavClick = (id: string) => {
     const el = document.getElementById(id);
-    el?.scrollIntoView({ behavior: 'smooth' });
+    if (!el) return;
+    const navHeight = window.innerWidth >= 768 ? 72 : 64;
+    const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - navHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
   };
 
   return (

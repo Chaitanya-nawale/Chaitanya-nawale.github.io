@@ -39,7 +39,13 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      scroll-padding-top: 4.5rem;
+    }
   }
 
   body {
@@ -118,10 +124,6 @@
   width: 100%;
 }
 
-/* ===== ROUGH NOTATION ACCENT STYLING ===== */
-.rough-annotation path {
-  stroke: var(--accent);
-}
 
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {

@@ -4,7 +4,6 @@ import { ExperienceTimeline } from './components/ExperienceTimeline';
 import { ProjectList } from './components/ProjectList';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Skills />
         <Contact />
       </main>
-      <Footer />
     </div>
   );
 }

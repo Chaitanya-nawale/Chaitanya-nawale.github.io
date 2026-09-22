@@ -21,9 +21,17 @@ export interface Project {
   status?: string;
 }
 
+export type SkillLevel = 'expert' | 'proficient' | 'beginner';
+
+export interface Skill {
+  name: string;
+  level: SkillLevel;
+  icon?: string;
+}
+
 export interface SkillGroup {
   name: string;
-  skills: string[];
+  skills: Skill[];
 }
 
 export interface SocialLink {
@@ -145,17 +153,6 @@ export const projects: Project[] = [
       'Engineered an AI platform delivering financial insights and detecting anomalous transactions.',
     technologies: ['Oracle', 'WayFlowCore', 'Ollama', 'Streamlit'],
   },
-  {
-    id: '04',
-    title: 'MeisterUp',
-    category: 'AI Learning Platform',
-    description:
-      'An AI-native adaptive learning platform that models what you already know, finds your gaps, and teaches the right concept next.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
-    url: 'https://meisterup.vercel.app/',
-    github: 'https://github.com/Chaitanya-nawale/meisterup-frontend',
-    status: 'Work in Progress',
-  },
 ];
 
 // ===== Skills =====
@@ -163,26 +160,52 @@ export const projects: Project[] = [
 export const skillGroups: SkillGroup[] = [
   {
     name: 'Programming Languages',
-    skills: ['Python', 'Java', 'C++', 'JavaScript', 'Bash'],
+    skills: [
+      { name: 'Python', level: 'expert', icon: 'skill-icons:python-dark' },
+      { name: 'Java', level: 'expert', icon: 'skill-icons:java-dark' },
+      { name: 'TypeScript', level: 'expert', icon: 'skill-icons:typescript' },
+      { name: 'C++', level: 'proficient', icon: 'skill-icons:cpp' },
+      { name: 'JavaScript', level: 'proficient', icon: 'skill-icons:javascript' },
+    ],
   },
   {
-    name: 'AI / ML',
-    skills: ['PyTorch', 'Deep Learning', 'LangGraph', 'LangChain', 'LLMs', 'RAG'],
+    name: 'Backend & Database Systems',
+    skills: [
+      { name: 'FastAPI', level: 'expert', icon: 'skill-icons:fastapi' },
+      { name: 'PostgreSQL', level: 'expert', icon: 'skill-icons:postgresql-dark' },
+      { name: 'pgvector', level: 'proficient', icon: 'skill-icons:postgresql-dark' },
+      { name: 'MongoDB', level: 'proficient', icon: 'skill-icons:mongodb' },
+      { name: 'Spring', level: 'proficient', icon: 'skill-icons:spring-dark' },
+    ],
   },
   {
-    name: 'Backend',
-    skills: ['FastAPI', 'Spring Boot', 'REST APIs'],
+    name: 'AI & Machine Learning',
+    skills: [
+      { name: 'PyTorch', level: 'expert', icon: 'skill-icons:pytorch-dark' },
+      { name: 'LangGraph', level: 'expert', icon: 'simple-icons:langgraph' },
+      { name: 'LangChain', level: 'expert', icon: 'simple-icons:langchain' },
+      { name: 'Transformers', level: 'proficient', icon: 'simple-icons:huggingface' },
+      { name: 'Scikit-Learn', level: 'proficient', icon: 'skill-icons:scikitlearn-dark' },
+    ],
   },
   {
-    name: 'Infrastructure / Tools',
-    skills: ['Git', 'Docker', 'Kubernetes', 'n8n', 'Claude Code'],
+    name: 'Tools and Infrastructure',
+    skills: [
+      { name: 'Git', level: 'expert', icon: 'skill-icons:git' },
+      { name: 'Docker', level: 'expert', icon: 'skill-icons:docker' },
+      { name: 'Claude Code', level: 'expert', icon: 'simple-icons:claudecode' },
+      { name: 'Kubernetes', level: 'proficient', icon: 'skill-icons:kubernetes' },
+      { name: 'AWS', level: 'proficient', icon: 'skill-icons:aws-dark' },
+    ],
   },
   {
-    name: 'Frontend',
-    skills: ['HTML', 'CSS', 'Tailwind CSS'],
-  },
-  {
-    name: 'Databases / Platforms',
-    skills: ['MySQL', 'MongoDB', 'Oracle', 'Supabase'],
+    name: 'Frontend Engineering',
+    skills: [
+      { name: 'React', level: 'proficient', icon: 'skill-icons:react-dark' },
+      { name: 'HTML', level: 'expert', icon: 'skill-icons:html' },
+      { name: 'CSS', level: 'proficient', icon: 'skill-icons:css' },
+      { name: 'Tailwind CSS', level: 'beginner', icon: 'skill-icons:tailwindcss-dark' },
+      { name: 'TanStack', level: 'beginner', icon: 'simple-icons:tanstack' },
+    ],
   },
 ];

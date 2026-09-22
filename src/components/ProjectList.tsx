@@ -16,7 +16,10 @@ export function ProjectList() {
   const revealRef = useScrollReveal();
 
   return (
-    <section id="projects" className="py-20 md:py-28 px-6">
+    <section
+      id="projects"
+      className="pt-8 sm:pt-10 pb-20 md:pb-28 px-6 scroll-mt-16 md:scroll-mt-18"
+    >
       <div ref={revealRef} className="max-w-2xl mx-auto">
         <div className="reveal">
           <SectionHeading subtitle="Selected work across AI, software engineering, and product">
