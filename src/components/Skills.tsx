@@ -225,7 +225,7 @@ function SkillIcon({ name, icon }: { name: string; icon?: string }) {
   // 1. Check custom vector icon
   const CustomIcon = getNormalizedKey(CUSTOM_ICONS, name);
   if (CustomIcon) {
-    return <CustomIcon />;
+    return CustomIcon();
   }
 
   // 2. Devicon CDN

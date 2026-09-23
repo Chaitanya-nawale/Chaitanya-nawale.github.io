@@ -24,7 +24,8 @@ export function useScrollSpy(sectionIds: string[], offset = 100) {
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
-    const elements = sectionIds
+    const ids = idsKey.split(',').filter(Boolean);
+    const elements = ids
       .map((id) => document.getElementById(id))
       .filter(Boolean) as HTMLElement[];
 
