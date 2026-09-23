@@ -5,11 +5,16 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-heading: 'Space Grotesk', var(--font-sans);
+  --font-body: var(--font-sans);
 
   --color-bg: var(--bg-primary);
+  --color-background: var(--bg-primary);
   --color-bg-secondary: var(--bg-secondary);
   --color-text: var(--text-primary);
+  --color-maintext: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
+  --color-subtext: var(--text-secondary);
   --color-text-tertiary: var(--text-tertiary);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
