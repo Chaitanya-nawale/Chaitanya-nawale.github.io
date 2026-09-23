@@ -1,17 +1,16 @@
-import projectsData from '../data/projects.json';
-import { ProjectCard, type ProjectItem } from './ProjectCard';
+import { projects } from '../data/projects';
+import { ProjectCard } from './ProjectCard';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export function ProjectList() {
   const revealRef = useScrollReveal();
-  const projects = projectsData as ProjectItem[];
 
   return (
     <section
       id="projects"
-      className="pt-12 sm:pt-16 pb-20 md:pb-28 px-6 md:px-12 lg:px-16 scroll-mt-16 md:scroll-mt-18 overflow-hidden"
+      className="min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-4.5rem)] flex flex-col justify-center pt-14 sm:pt-20 pb-32 sm:pb-40 md:pb-52 px-6 md:px-12 lg:px-16 scroll-mt-16 md:scroll-mt-18 overflow-hidden"
     >
-      <div ref={revealRef} className="max-w-6xl mx-auto w-full">
+      <div ref={revealRef} className="max-w-6xl mx-auto w-full my-auto">
         {/* Header matching Featured Projects design */}
         <div className="reveal mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-text mb-2 flex items-center gap-3">

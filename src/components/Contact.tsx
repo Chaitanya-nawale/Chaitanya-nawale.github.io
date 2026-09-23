@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Mail, ArrowUpRight } from 'lucide-react';
 import { annotate } from 'rough-notation';
-import { personalInfo } from '../data/content';
+import { personalInfo } from '../data/personal';
 import { SectionHeading } from './ui/SectionHeading';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { Footer } from './Footer';

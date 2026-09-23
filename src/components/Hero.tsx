@@ -1,11 +1,24 @@
 import { ArrowUpRight, ChevronDown } from 'lucide-react';
-import { personalInfo, socialLinks } from '../data/content';
+import { personalInfo, socialLinks } from '../data/personal';
 import { SocialIcon } from './ui/SocialIcon';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { RoughUnderline } from './RoughUnderline';
 
 export function Hero() {
   const revealRef = useScrollReveal();
+
+  const handleScrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const navHeight = window.innerWidth >= 768 ? 72 : 64;
+    const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - navHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <section
@@ -75,7 +88,7 @@ export function Hero() {
               href="#projects"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                handleScrollTo('projects');
               }}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-bg-secondary/40 hover:bg-bg-secondary hover:border-accent/40 px-6 py-3 text-sm sm:text-base font-medium text-text transition-all duration-200"
             >
@@ -103,7 +116,7 @@ export function Hero() {
           href="#experience"
           onClick={(e) => {
             e.preventDefault();
-            document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
+            handleScrollTo('experience');
           }}
           aria-label="Scroll down to Experience section"
           className="text-text-secondary hover:text-text flex flex-col items-center p-2 transition-colors"

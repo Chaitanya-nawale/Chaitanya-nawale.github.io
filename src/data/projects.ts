@@ -1,0 +1,34 @@
+import type { Project } from './types';
+
+export const projects: Project[] = [
+  {
+    title: 'XpertsAI',
+    category: 'Published Website',
+    description:
+      'Built an AI platform enabling experts to share and monetize their niche knowledge at scale.',
+    images: ['Web1.png', 'Web2.png', 'Web3.png', 'Web4.png', 'Web5.png', 'Web6.png'],
+    tech: ['FastAPI', 'n8n', 'Supabase', 'vLLM'],
+    platforms: ['web'],
+    link: 'https://github.com/Chaitanya-nawale/ExpertKnowledgeTwin/',
+  },
+  {
+    title: 'Chasing Birds',
+    category: 'Deep Learning Lab',
+    description:
+      'Developed a multimodal diffusion system that generates bird audio from images or text.',
+    images: ['DLL1.png'],
+    tech: ['Pytorch', 'Deep Learning', 'Data Preprocessing'],
+    platforms: [],
+    link: 'https://github.com/Chaitanya-nawale/BirdAudioGenerator/',
+  },
+  {
+    title: 'SnitchAI',
+    category: 'Desktop Application',
+    description:
+      'Engineered an AI platform delivering financial insights and detecting anomalous transactions.',
+    images: ['App1.png', 'App2.png', 'App3.png'],
+    tech: ['Oracle WayFlowCore', 'Ollama', 'Streamlit'],
+    platforms: ['application'],
+    link: 'https://github.com/Chaitanya-nawale/LauzHack2025/',
+  },
+];

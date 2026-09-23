@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { skillGroups, type SkillLevel } from '../data/content';
+import { skillGroups } from '../data/skills';
+import type { SkillLevel } from '../data/types';
 import { SectionHeading } from './ui/SectionHeading';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 

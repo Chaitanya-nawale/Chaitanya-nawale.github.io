@@ -1,5 +1,5 @@
 import { Mail, Code2 } from 'lucide-react';
-import type { SocialLink } from '../../data/content';
+import type { SocialLink } from '../../data/types';
 
 function GithubIcon({ className }: { className?: string }) {
   return (

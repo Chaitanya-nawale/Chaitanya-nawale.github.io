@@ -1,4 +1,4 @@
-import { personalInfo } from '../data/content';
+import { personalInfo } from '../data/personal';
 
 export function Footer() {
   return (

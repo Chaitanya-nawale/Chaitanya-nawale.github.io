@@ -1,18 +1,11 @@
 import { useState, useEffect } from 'react';
 import { resolveAssetImage } from '../utils/images';
+import type { Project } from '../data/types';
 
-export interface ProjectItem {
-  title: string;
-  description: string;
-  images: string[];
-  tech: string[];
-  platforms: string[];
-  link: string;
-  category: string;
-}
+export type ProjectItem = Project;
 
 interface ProjectCardProps {
-  project: ProjectItem;
+  project: Project;
 }
 
 function PlatformIcon({ platform }: { platform: string }) {
